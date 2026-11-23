@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a3c1f1de-7b52-4c1e-9a34-1f6d2b8e5c71}</ProjectGuid>
+    <RootNamespace>shoplab3</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\add_product_command.cpp" />
+    <ClCompile Include="src\add_product_handler.cpp" />
+    <ClCompile Include="src\cancel_order_command.cpp" />
+    <ClCompile Include="src\cancel_order_handler.cpp" />
+    <ClCompile Include="src\change_price_command.cpp" />
+    <ClCompile Include="src\change_price_handler.cpp" />
+    <ClCompile Include="src\change_quantity_command.cpp" />
+    <ClCompile Include="src\change_quantity_handler.cpp" />
+    <ClCompile Include="src\command.cpp" />
+    <ClCompile Include="src\command_history.cpp" />
+    <ClCompile Include="src\confirm_payment_command.cpp" />
+    <ClCompile Include="src\confirm_payment_handler.cpp" />
+    <ClCompile Include="src\create_order_command.cpp" />
+    <ClCompile Include="src\create_order_handler.cpp" />
+    <ClCompile Include="src\delivery_service.cpp" />
+    <ClCompile Include="src\handler.cpp" />
+    <ClCompile Include="src\help_handler.cpp" />
+    <ClCompile Include="src\logging_proxy.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\move_product_command.cpp" />
+    <ClCompile Include="src\move_product_handler.cpp" />
+    <ClCompile Include="src\order.cpp" />
+    <ClCompile Include="src\order_item.cpp" />
+    <ClCompile Include="src\order_manager.cpp" />
+    <ClCompile Include="src\payment_system.cpp" />
+    <ClCompile Include="src\price.cpp" />
+    <ClCompile Include="src\product.cpp" />
+    <ClCompile Include="src\product_factory.cpp" />
+    <ClCompile Include="src\quantity.cpp" />
+    <ClCompile Include="src\remove_product_command.cpp" />
+    <ClCompile Include="src\remove_product_handler.cpp" />
+    <ClCompile Include="src\scenario_runner.cpp" />
+    <ClCompile Include="src\ship_order_command.cpp" />
+    <ClCompile Include="src\ship_order_handler.cpp" />
+    <ClCompile Include="src\shop_facade.cpp" />
+    <ClCompile Include="src\shop_mediator.cpp" />
+    <ClCompile Include="src\show_orders_command.cpp" />
+    <ClCompile Include="src\show_orders_handler.cpp" />
+    <ClCompile Include="src\show_products_command.cpp" />
+    <ClCompile Include="src\show_products_handler.cpp" />
+    <ClCompile Include="src\show_statistics_command.cpp" />
+    <ClCompile Include="src\show_statistics_handler.cpp" />
+    <ClCompile Include="src\tokenizer.cpp" />
+    <ClCompile Include="src\undo_command.cpp" />
+    <ClCompile Include="src\undo_handler.cpp" />
+    <ClCompile Include="src\warehouse.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\add_product_command.h" />
+    <ClInclude Include="src\add_product_handler.h" />
+    <ClInclude Include="src\cancel_order_command.h" />
+    <ClInclude Include="src\cancel_order_handler.h" />
+    <ClInclude Include="src\change_price_command.h" />
+    <ClInclude Include="src\change_price_handler.h" />
+    <ClInclude Include="src\change_quantity_command.h" />
+    <ClInclude Include="src\change_quantity_handler.h" />
+    <ClInclude Include="src\command.h" />
+    <ClInclude Include="src\command_history.h" />
+    <ClInclude Include="src\confirm_payment_command.h" />
+    <ClInclude Include="src\confirm_payment_handler.h" />
+    <ClInclude Include="src\create_order_command.h" />
+    <ClInclude Include="src\create_order_handler.h" />
+    <ClInclude Include="src\delivery_service.h" />
+    <ClInclude Include="src\delivery_type.h" />
+    <ClInclude Include="src\handler.h" />
+    <ClInclude Include="src\help_handler.h" />
+    <ClInclude Include="src\input_processor.h" />
+    <ClInclude Include="src\logging_proxy.h" />
+    <ClInclude Include="src\move_product_command.h" />
+    <ClInclude Include="src\move_product_handler.h" />
+    <ClInclude Include="src\operation_result.h" />
+    <ClInclude Include="src\operation_status.h" />
+    <ClInclude Include="src\order.h" />
+    <ClInclude Include="src\order_item.h" />
+    <ClInclude Include="src\order_item_request.h" />
+    <ClInclude Include="src\order_manager.h" />
+    <ClInclude Include="src\order_statistics.h" />
+    <ClInclude Include="src\order_status.h" />
+    <ClInclude Include="src\payment_system.h" />
+    <ClInclude Include="src\price.h" />
+    <ClInclude Include="src\product.h" />
+    <ClInclude Include="src\product_factory.h" />
+    <ClInclude Include="src\quantity.h" />
+    <ClInclude Include="src\remove_product_command.h" />
+    <ClInclude Include="src\remove_product_handler.h" />
+    <ClInclude Include="src\scenario_runner.h" />
+    <ClInclude Include="src\ship_order_command.h" />
+    <ClInclude Include="src\ship_order_handler.h" />
+    <ClInclude Include="src\shop_facade.h" />
+    <ClInclude Include="src\shop_mediator.h" />
+    <ClInclude Include="src\show_orders_command.h" />
+    <ClInclude Include="src\show_orders_handler.h" />
+    <ClInclude Include="src\show_products_command.h" />
+    <ClInclude Include="src\show_products_handler.h" />
+    <ClInclude Include="src\show_statistics_command.h" />
+    <ClInclude Include="src\show_statistics_handler.h" />
+    <ClInclude Include="src\tokenizer.h" />
+    <ClInclude Include="src\undo_command.h" />
+    <ClInclude Include="src\undo_handler.h" />
+    <ClInclude Include="src\warehouse.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
